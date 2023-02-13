@@ -11,18 +11,16 @@ function updateValues(){
     const selectedSeats = document.querySelectorAll('.row .selected');
     totalSeats.innerText = selectedSeats.length;
     totalCost.innerText = total*selectedSeats.length;
-    console.log("total",total)
 }
 
 
 select.addEventListener('change',e=>{
     total = e.target.value
-    console.log("total")
 })
 
 container.addEventListener('click',e=>{
    if(!e.target.classList.contains('occupied') && e.target.classList.contains('seat')){
-    console.log(e.target.classList.toggle('selected'));
+    e.target.classList.toggle('selected')
    }
    updateValues();
 })
