@@ -8,9 +8,11 @@ let total = +select.value;
 
 function populateUI(){
     let mySeats = JSON.parse(localStorage.getItem('seats'))
+    if(mySeats !== null){
     mySeats.forEach(function(seat){
         [...allSeats][seat].classList.toggle('selected')
     })
+}
     
 }
 
