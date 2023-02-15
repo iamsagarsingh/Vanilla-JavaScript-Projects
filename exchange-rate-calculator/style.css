@@ -57,6 +57,12 @@ h1,p{
     outline:none;
 }
 
+.mid-section{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
 .btn{
     padding: 10px;
     background-color: #414141;
