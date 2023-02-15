@@ -6,6 +6,8 @@ const amountTwo = document.querySelector('.amount-two')
 
 const swapValues = document.querySelector('.swap')
 
+const rate = document.querySelector('.rate')
+
 async function calculate(){
     const currencyFirst = currencyOne.value;
     const currencySecond = currencyTwo.value;
@@ -14,7 +16,7 @@ async function calculate(){
     const convertedData = data.rates[currencySecond] * amountOne.value;
     amountTwo.value = convertedData;
 
-
+    rate.innerText = `1 ${currencyFirst} = ${data.rates[currencySecond]} ${currencySecond}`
 
 }
 
