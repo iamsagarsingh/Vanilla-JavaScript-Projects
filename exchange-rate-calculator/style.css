@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #313131;
+    color:#fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+h1,p{
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.currency-one,.currency-two{
+    display: flex;
+    gap:10px;
+}
+
+.currency-one select,.currency-two select{
+    padding: 10px 25px;
+    border: none;
+    appearance: none;
+    --moz-appearance:none;
+    --webkit-appearance:none;
+    background-image: url('icons8-down-arrow-64.png');
+    background-position: right 2px top 7px ,0,0;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    color:white;
+    background-color: #414141;
+}
+
+.currency-one input,.currency-two input{
+    background: transparent;
+    border:0;
+    text-align: right;
+    font-size: 30px;
+    color:#fff;
+}
+
+.currency-one input:focus, .currency-two input:focus{
+    outline:none;
+}
+
+.btn{
+    padding: 10px;
+    background-color: #414141;
+    color:#fff;
+    border:none;
+    cursor:pointer;
+}
+
+@media (max-width:780px) {
+    body{
+        padding: 20px;
+
+    }
+    input{
+        width:200px;
+        
+    }
+}
+
