@@ -6,3 +6,6 @@ This repository consists of vanilla JavaScript projects.
 
 ## 2. Exchange-rate-calculator
 [https://iamsagarsingh.github.io/Vanilla-JavaScript-Projects/exchange-rate-calculator/](https://iamsagarsingh.github.io/Vanilla-JavaScript-Projects/exchange-rate-calculator/)
+
+## 3. Menu-slider-modal
+[https://iamsagarsingh.github.io/Vanilla-JavaScript-Projects/menu-slider-modal/](https://iamsagarsingh.github.io/Vanilla-JavaScript-Projects/menu-slider-modal/)
