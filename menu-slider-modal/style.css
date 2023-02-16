@@ -1,0 +1,181 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+:root{
+    --modal-duration: 1s;
+    --primary-color: #30336b;
+    --secondary-color: #be2edd;
+}
+body{
+    transition: transform 0.3s ease;
+}
+nav{
+    position: fixed;
+    width: 200px;
+    border-right: 1px solid #fff;
+    background-color: var(--primary-color);
+    height: 100vh;
+    transform: translateX(-100%);
+    z-index: 100;
+}
+
+nav .logo{
+    text-align: center;
+    padding: 30px 0;
+}
+.logo img{
+    border-radius: 50%;
+
+    width: 75px;
+    height: 75px;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    padding: 20px;
+    border-bottom: 1px solid gray;
+}
+
+nav ul li:first-child{
+    border-top: 1px solid gray;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+body.showNav{
+    transform: translateX(200px);
+}
+header{
+    position: relative;
+    background-color: var(--primary-color);
+    padding: 20px 10px;
+    text-align: center;
+    color: #fff;
+    font-size: 130%;
+    width: 100%;
+}
+header h1{
+    padding: 40px;
+    /* font-size: 330%; */
+}
+
+
+header .toggle{
+    position: absolute;
+    top:10px;
+    left:10px;
+    padding:5px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: transparent;
+    color:#fff;
+}
+
+header #sign-up{
+    background-color: #be2edd;
+    padding: 10px 20px;
+    border: none;
+    margin: 20px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.container{
+    width:800px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding:20px;
+    overflow: none;
+}
+
+.container h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.container ul{
+    padding-left: 40px;
+    margin-bottom: 20px;
+}
+.modal-container{
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom: 0;
+    display: none;
+
+}
+.showModal{
+    display: block;
+}
+.modal{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    background-color: #fff;
+    animation-name: modalOpen;
+    animation-duration: var(--modal-duration);
+}
+
+@keyframes modalOpen {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity:1;
+    }
+}
+.modal .head{
+    padding:15px;
+    background-color: var(--primary-color);
+    color:#fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal .close-btn{
+    padding:5px;
+    background-color: #be2edd;
+    color: #fff;
+    border: none;
+}
+.modal p{
+    padding: 20px 10px 10px 10px;
+}
+
+.modal form{
+    padding: 10px;
+}
+
+.modal form label{
+    display: block;
+    font-size: 20px;
+    margin-bottom: 5px;
+    margin-top: 8px;
+}
+
+.modal form input:not([type="submit"]){
+    padding:10px 5px;
+    width: 100%;
+}
+
+.modal form input[type="submit"]{
+    margin-top: 10px;
+    background-color: var(--secondary-color);
+    border:none;
+    padding:10px;
+}
