@@ -9,3 +9,6 @@ This repository consists of vanilla JavaScript projects.
 
 ## 3. Menu-slider-modal
 [https://iamsagarsingh.github.io/Vanilla-JavaScript-Projects/menu-slider-modal/](https://iamsagarsingh.github.io/Vanilla-JavaScript-Projects/menu-slider-modal/)
+
+## 4. Weather App
+[https://iamsagarsingh.github.io/Vanilla-JavaScript-Projects/weather-app](https://iamsagarsingh.github.io/Vanilla-JavaScript-Projects/weather-app)
