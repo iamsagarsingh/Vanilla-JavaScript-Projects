@@ -12,3 +12,6 @@ This repository consists of vanilla JavaScript projects.
 
 ## 4. Weather App
 [https://iamsagarsingh.github.io/Vanilla-JavaScript-Projects/weather-app](https://iamsagarsingh.github.io/Vanilla-JavaScript-Projects/weather-app)
+
+## 5. Meals Finder
+[https://iamsagarsingh.github.io/Vanilla-JavaScript-Projects/Meals-finder](https://iamsagarsingh.github.io/Vanilla-JavaScript-Projects/Meals-finder)
