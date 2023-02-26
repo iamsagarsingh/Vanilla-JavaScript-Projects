@@ -11,6 +11,9 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    flex-direction: column;
+    gap:20px;
+    color:orange;
 }
 
 .music-box{
@@ -72,9 +75,18 @@ body{
 }
 
 .music-progress .progress{
-    width:100%;
+    width:0%;
+    height: 4px;
+    z-index: 1;
+    background-color: orange;
+}
+
+.music-progress .progress::after{
+    content: " ";
     height: 4px;
     background-color: gray;
+    width: 100%;
+    z-index: -1;
 }
 
 .music-controlls{

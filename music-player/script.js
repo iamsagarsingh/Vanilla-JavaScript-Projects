@@ -5,7 +5,7 @@ const musicBox = document.querySelector('.music-box')
 const audio = document.getElementById('audio')
 const song = document.getElementById('song')
 const thumbnail = document.getElementById('thumbnail')
-
+const progress = document.querySelector('.progress')
 const playlist = ['hey','summer','ukulele']
 
 let index = 1
@@ -43,6 +43,12 @@ function pauseSong(){
     audio.pause()
 }
 
+function updateTime(e){
+    const {duration,currentTime} = e.srcElement;
+    const progressTime = (currentTime/duration) * 100
+    progress.style.width = `${progressTime}%`
+}
+
 function playNext(){
     index++
     if(index === playlist.length){
@@ -65,3 +71,5 @@ play.addEventListener('click',toggleSong)
 
 forward.addEventListener('click',playNext)
 backward.addEventListener('click',playPrev)
+
+audio.addEventListener('timeupdate',updateTime)
