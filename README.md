@@ -15,3 +15,6 @@ This repository consists of vanilla JavaScript projects.
 
 ## 5. Meals Finder
 [https://iamsagarsingh.github.io/Vanilla-JavaScript-Projects/Meals-finder](https://iamsagarsingh.github.io/Vanilla-JavaScript-Projects/Meals-finder)
+
+## 6. Music App
+[https://iamsagarsingh.github.io/Vanilla-JavaScript-Projects/music-player](https://iamsagarsingh.github.io/Vanilla-JavaScript-Projects/music-player)
